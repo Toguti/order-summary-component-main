@@ -13,21 +13,45 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <!--Fonts import-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+  <!--CSS styles link-->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Order Summary
+  <div class="container">
+    <img src="./images/illustration-hero.svg" alt="Person listening to music" class="illustration-hero">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <div class="order-summary">
+      <h2>Order Summary</h2>
 
-  Annual Plan
-  $59.99/year
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
+      </form>
+      <div class="plan-container">
+        <img src="./images/icon-music.svg" alt="Music note symbol">
+        <div class="plan-type"><h3>Annual Plan</h3><p>$59.99/year</p></div>
+        <a href="#" class="change-plan">Change</a>
+      </div>
+  
+      <button>
+        Proceed to Payment
+      </button>
+      <a href="#" class="cancel-order">Cancel Order</a>
+    </div>
+    
+    
+  </div>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
