@@ -1,139 +1,157 @@
 :root {
-    --pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(245, 75%, 52%);
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --desaturated-blue: hsl(224, 23%, 55%);
-    --dark-blue: hsl(223, 47%, 23%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
 }
 html {
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
 }
 /* card */
 body {
-    background-image: url('./images/pattern-background-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: var(--very-pale-blue);
-    height: 100vh;
-    display:flex;
-    flex-flow: column;
-    justify-content:center;
-    align-items: center;
-    overflow: auto;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--very-pale-blue);
+
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
 .container {
-    height: 650px;
-    width:30%;
+  height: 650px;
+  width: 30%;
 
-    background: white;
-    border-radius: 30px;
-    text-align: center;
-    overflow: hidden;
-    overflow-y: auto;
-    min-width: 350px;
+  background: white;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  overflow-y: auto;
+  min-width: 350px;
+  max-width: 450px;
 }
 
 /* Card Image */
 .illustration-hero {
-    width:100% ;
+  width: 100%;
 }
 /* Card Information */
 h2 {
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin-top: 50px;
-    color: var(--dark-blue);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 40px;
+  color: var(--dark-blue);
 }
 
 p {
-    color: var(--desaturated-blue);
+  color: var(--desaturated-blue);
+  font-size: 1rem;
 }
 
 .order-summary {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .order-summary > p {
-    margin: 20px 0 0 0;
+  margin: 20px 0 0 0;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 /* Plan choice */
 .plan-container {
-    margin-top: 20px;
-    background: var(--very-pale-blue);
-    box-sizing: content-box;
+  margin-top: 20px;
+  background: var(--very-pale-blue);
+  box-sizing: content-box;
 
-    padding: 20px 20px;
-    border-radius: 10px;
-    height:48px;
-    width:auto;
-    display: flex;
-    justify-content: flex-start;
-    overflow-x: auto;
+  padding: 20px 20px;
+  border-radius: 10px;
+  height: 48px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
 }
 
 .plan-container img {
-    height: 48px;
-    width: 48px;
+  height: 48px;
+  width: 48px;
 }
 
 .plan-type {
-    position: relative;
-    padding: 3px 0 3px 20px;
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content:space-between;
-    
+  position: relative;
+  padding: 3px 0 3px 20px;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-between;
 }
 
 .plan-type h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--dark-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-blue);
 }
 
 .change-plan {
-    flex-grow: 1;
-    text-align: end;
-    line-height: 48px;
-    color: var(--bright-blue);
+  flex-grow: 1;
+  text-align: end;
+  line-height: 48px;
+  color: var(--bright-blue);
 }
 
 .change-plan:hover {
-    text-decoration: none;
-    opacity: 0.7;
+  text-decoration: none;
+  opacity: 0.7;
 }
-
 
 /* Buttons */
 .container button {
-    box-sizing: border-box;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    background: var(--bright-blue);
-    border: none;
-    border-radius: 10px;
-    padding: 15px 0;
-    color: white;
-    font-weight: 900;
-    font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: var(--bright-blue);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  color: white;
+  font-weight: 900;
+  font-size: 0.9rem;
 
-    box-shadow: 0 15px 5px var(--pale-blue);
+  box-shadow: 0 15px 10px var(--pale-blue);
 }
 
 .container button:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .cancel-order {
-    text-decoration: none;
-    color: var(--desaturated-blue);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--desaturated-blue);
 }
 
 .cancel-order:hover {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--very-pale-blue);
+  }
+  .container {
+    height: 80%;
+    max-height: 600px;
+  }
 }
